@@ -14,6 +14,8 @@
 		1130D76820DDB57600741702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1130D76620DDB57600741702 /* LaunchScreen.storyboard */; };
 		1130D77320DDB57600741702 /* JPCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D77220DDB57600741702 /* JPCounterTests.swift */; };
 		1130D77E20DDB57600741702 /* JPCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D77D20DDB57600741702 /* JPCounterUITests.swift */; };
+		1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78B20DEC8E100741702 /* Kitchen.swift */; };
+		1130D78E20E09FBE00741702 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78D20E09FBE00741702 /* CountService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1130D77920DDB57600741702 /* JPCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1130D77D20DDB57600741702 /* JPCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPCounterUITests.swift; sourceTree = "<group>"; };
 		1130D77F20DDB57600741702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1130D78B20DEC8E100741702 /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
+		1130D78D20E09FBE00741702 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		1130D75C20DDB57500741702 /* JPCounter */ = {
 			isa = PBXGroup;
 			children = (
+				1130D78D20E09FBE00741702 /* CountService.swift */,
 				1130D75D20DDB57500741702 /* AppDelegate.swift */,
 				1130D75F20DDB57500741702 /* ViewController.swift */,
 				1130D76120DDB57500741702 /* Main.storyboard */,
 				1130D76420DDB57600741702 /* Assets.xcassets */,
 				1130D76620DDB57600741702 /* LaunchScreen.storyboard */,
 				1130D76920DDB57600741702 /* Info.plist */,
+				1130D78B20DEC8E100741702 /* Kitchen.swift */,
 			);
 			path = JPCounter;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1130D76020DDB57500741702 /* ViewController.swift in Sources */,
+				1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */,
 				1130D75E20DDB57500741702 /* AppDelegate.swift in Sources */,
+				1130D78E20E09FBE00741702 /* CountService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
