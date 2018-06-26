@@ -11,20 +11,21 @@ enum ViewCommand {
     case display(value: String)
 }
 
-struct CountState {
-    var count: Int
-    
-    mutating func increment() {
-        self.count+=1;
-    }
-    
-    mutating func decrement() {
-        self.count-=1;
-    }
-}
+//struct CountState {
+//    var count: Int
+//
+//    mutating func increment() {
+//        self.count+=1;
+//    }
+//
+//    mutating func decrement() {
+//        self.count-=1;
+//    }
+//}
 
 class Kitchen {
     var delegate: ViewController
+    var countService: CountService
     
     var countState: CountState = CountState(count: 0)
     
@@ -41,23 +42,24 @@ class Kitchen {
     
     init(delegate: ViewController) {
         self.delegate = delegate
+        self.countService = CountService(count: 0)
     }
     
     func viewDidLoad(delegate: ViewController) {
-        let displayString = "Count is \(countState.count)"
+        let displayString = "Count is \(countService.getCount())"
         self.delegate.perform(.display(value: displayString))
     }
         
     
     func countAdd() {
-        countState.increment()
-        var displayString = "After countAdd count is \(countState.count)"
+        countService.incrementCount()
+        let displayString = "After countAdd count is \(countService.getCount())"
         self.delegate.perform(.display(value: displayString))
     }
     
     func countSubtract() {
-        countState.decrement()
-        var displayString = "After countSubtract count is \(countState.count)"
+        countService.decrementCount()
+        let displayString = "After countSubtract count is \(countService.getCount())"
         self.delegate.perform(.display(value: displayString))
     }
 }
