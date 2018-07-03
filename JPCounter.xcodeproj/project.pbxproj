@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1104BD3A20EAE40400133758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1104BD3920EAE40400133758 /* GoogleService-Info.plist */; };
 		1130D75E20DDB57500741702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D75D20DDB57500741702 /* AppDelegate.swift */; };
 		1130D76020DDB57500741702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D75F20DDB57500741702 /* ViewController.swift */; };
 		1130D76320DDB57500741702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1130D76120DDB57500741702 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 		1130D77E20DDB57600741702 /* JPCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D77D20DDB57600741702 /* JPCounterUITests.swift */; };
 		1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78B20DEC8E100741702 /* Kitchen.swift */; };
 		1130D78E20E09FBE00741702 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78D20E09FBE00741702 /* CountService.swift */; };
+		11357B8F20EA86E8000DEBC6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */; };
+		5AF4F2299D8E56215329C2E9 /* libPods-JPCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4497D162CF5EB0EAF8ED3B /* libPods-JPCounter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001A1B63610EEC3926ED8321 /* Pods-JPCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JPCounter/Pods-JPCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		1104BD3920EAE40400133758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1104BD3B20EAE42800133758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1130D75A20DDB57500741702 /* JPCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1130D75D20DDB57500741702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1130D75F20DDB57500741702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,9 @@
 		1130D77F20DDB57600741702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1130D78B20DEC8E100741702 /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
 		1130D78D20E09FBE00741702 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
+		11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		6B199077D2178D793E8D73BD /* Pods-JPCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JPCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-JPCounter/Pods-JPCounter.release.xcconfig"; sourceTree = "<group>"; };
+		DF4497D162CF5EB0EAF8ED3B /* libPods-JPCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF4F2299D8E56215329C2E9 /* libPods-JPCounter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +91,13 @@
 		1130D75120DDB57500741702 = {
 			isa = PBXGroup;
 			children = (
+				1104BD3920EAE40400133758 /* GoogleService-Info.plist */,
 				1130D75C20DDB57500741702 /* JPCounter */,
 				1130D77120DDB57600741702 /* JPCounterTests */,
 				1130D77C20DDB57600741702 /* JPCounterUITests */,
 				1130D75B20DDB57500741702 /* Products */,
+				47A1B01FA2072957F0B3A537 /* Pods */,
+				AEBB266A1E7B8C93B231CDF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,7 @@
 		1130D75C20DDB57500741702 /* JPCounter */ = {
 			isa = PBXGroup;
 			children = (
+				1104BD3B20EAE42800133758 /* GoogleService-Info.plist */,
 				1130D78D20E09FBE00741702 /* CountService.swift */,
 				1130D75D20DDB57500741702 /* AppDelegate.swift */,
 				1130D75F20DDB57500741702 /* ViewController.swift */,
@@ -109,6 +123,7 @@
 				1130D76620DDB57600741702 /* LaunchScreen.storyboard */,
 				1130D76920DDB57600741702 /* Info.plist */,
 				1130D78B20DEC8E100741702 /* Kitchen.swift */,
+				11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */,
 			);
 			path = JPCounter;
 			sourceTree = "<group>";
@@ -131,6 +146,23 @@
 			path = JPCounterUITests;
 			sourceTree = "<group>";
 		};
+		47A1B01FA2072957F0B3A537 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				001A1B63610EEC3926ED8321 /* Pods-JPCounter.debug.xcconfig */,
+				6B199077D2178D793E8D73BD /* Pods-JPCounter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEBB266A1E7B8C93B231CDF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF4497D162CF5EB0EAF8ED3B /* libPods-JPCounter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1130D78220DDB57600741702 /* Build configuration list for PBXNativeTarget "JPCounter" */;
 			buildPhases = (
+				51942B3F049021B2BD4A2CFC /* [CP] Check Pods Manifest.lock */,
 				1130D75620DDB57500741702 /* Sources */,
 				1130D75720DDB57500741702 /* Frameworks */,
 				1130D75820DDB57500741702 /* Resources */,
@@ -236,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1130D76820DDB57600741702 /* LaunchScreen.storyboard in Resources */,
+				1104BD3A20EAE40400133758 /* GoogleService-Info.plist in Resources */,
 				1130D76520DDB57600741702 /* Assets.xcassets in Resources */,
 				1130D76320DDB57500741702 /* Main.storyboard in Resources */,
 			);
@@ -257,12 +291,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51942B3F049021B2BD4A2CFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JPCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1130D75620DDB57500741702 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1130D76020DDB57500741702 /* ViewController.swift in Sources */,
+				11357B8F20EA86E8000DEBC6 /* FirebaseService.swift in Sources */,
 				1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */,
 				1130D75E20DDB57500741702 /* AppDelegate.swift in Sources */,
 				1130D78E20E09FBE00741702 /* CountService.swift in Sources */,
@@ -436,6 +492,7 @@
 		};
 		1130D78320DDB57600741702 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001A1B63610EEC3926ED8321 /* Pods-JPCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +510,7 @@
 		};
 		1130D78420DDB57600741702 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B199077D2178D793E8D73BD /* Pods-JPCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
