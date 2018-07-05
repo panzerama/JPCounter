@@ -1,5 +1,6 @@
 
 import Foundation
+import Firebase
 
 enum ViewEvent {
     case viewDidLoad(delegate: ViewController)
@@ -11,21 +12,10 @@ enum ViewCommand {
     case display(value: String)
 }
 
-//struct CountState {
-//    var count: Int
-//
-//    mutating func increment() {
-//        self.count+=1;
-//    }
-//
-//    mutating func decrement() {
-//        self.count-=1;
-//    }
-//}
-
 class Kitchen {
     var delegate: ViewController
     var countService: CountService
+    var firebaseService: FirebaseService
     
     var countState: CountState = CountState(count: 0)
     
@@ -42,6 +32,8 @@ class Kitchen {
     
     init(delegate: ViewController) {
         self.delegate = delegate
+        let db = Firestore.firestore()
+        self.firebaseService = FirebaseService(database: db)
         self.countService = CountService(count: 0)
     }
     
@@ -55,6 +47,7 @@ class Kitchen {
         countService.incrementCount()
         let displayString = "After countAdd count is \(countService.getCount())"
         self.delegate.perform(.display(value: displayString))
+        self.firebaseService.writeTest()
     }
     
     func countSubtract() {

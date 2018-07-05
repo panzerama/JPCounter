@@ -18,6 +18,7 @@
 		1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78B20DEC8E100741702 /* Kitchen.swift */; };
 		1130D78E20E09FBE00741702 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78D20E09FBE00741702 /* CountService.swift */; };
 		11357B8F20EA86E8000DEBC6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */; };
+		11EBEBA920EEB8F00025968A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1104BD3B20EAE42800133758 /* GoogleService-Info.plist */; };
 		5AF4F2299D8E56215329C2E9 /* libPods-JPCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4497D162CF5EB0EAF8ED3B /* libPods-JPCounter.a */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +175,7 @@
 				1130D75620DDB57500741702 /* Sources */,
 				1130D75720DDB57500741702 /* Frameworks */,
 				1130D75820DDB57500741702 /* Resources */,
+				3EA21D69D496A57DA5146524 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +272,7 @@
 			files = (
 				1130D76820DDB57600741702 /* LaunchScreen.storyboard in Resources */,
 				1104BD3A20EAE40400133758 /* GoogleService-Info.plist in Resources */,
+				11EBEBA920EEB8F00025968A /* GoogleService-Info.plist in Resources */,
 				1130D76520DDB57600741702 /* Assets.xcassets in Resources */,
 				1130D76320DDB57500741702 /* Main.storyboard in Resources */,
 			);
@@ -292,6 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3EA21D69D496A57DA5146524 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JPCounter/Pods-JPCounter-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JPCounter/Pods-JPCounter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		51942B3F049021B2BD4A2CFC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
