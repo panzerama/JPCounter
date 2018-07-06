@@ -1,0 +1,6 @@
+module Pods_JPCounter {
+  umbrella header "Pods-JPCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}

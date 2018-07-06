@@ -1,0 +1,6 @@
+module Pods_JPCounterTests {
+  umbrella header "Pods-JPCounterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

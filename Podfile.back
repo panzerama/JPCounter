@@ -1,0 +1,25 @@
+use_frameworks!
+
+def testing_pods
+  pod 'Quick'
+  pod 'Nimble'
+end
+
+def core_pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+end
+
+target 'JPCounterTests' do
+  core_pods
+  testing_pods
+end
+
+target 'JPCounterUITests' do
+  core_pods
+  testing_pods
+end
+
+target 'JPCounter' do
+  core_pods
+end

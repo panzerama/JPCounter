@@ -1,0 +1,6 @@
+module Pods_JPCounterUITests {
+  umbrella header "Pods-JPCounterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
