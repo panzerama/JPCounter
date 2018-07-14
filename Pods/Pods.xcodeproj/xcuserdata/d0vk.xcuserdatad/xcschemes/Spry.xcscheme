@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "226AE4D3C38DEC4895274494451F2646"
-               BlueprintName = "Pods-JPCounter"
+               BlueprintIdentifier = "C600E2BBA268564370505EF5964EE3A4"
+               BlueprintName = "Spry"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-JPCounter.a">
+               BuildableName = "libSpry.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -18,6 +18,8 @@
 		1130D78C20DEC8E100741702 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78B20DEC8E100741702 /* Kitchen.swift */; };
 		1130D78E20E09FBE00741702 /* CountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D78D20E09FBE00741702 /* CountService.swift */; };
 		11357B8F20EA86E8000DEBC6 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */; };
+		1178FD3320EFDA6A004C1C80 /* KitchenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178FD3220EFDA6A004C1C80 /* KitchenSpec.swift */; };
+		1178FD3520F0244C004C1C80 /* FakeKitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178FD3420F0244C004C1C80 /* FakeKitchen.swift */; };
 		11A29C5020EEEA2400AEFCA5 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A29C4F20EEEA2400AEFCA5 /* ViewControllerSpec.swift */; };
 		11EBEBA920EEB8F00025968A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1104BD3B20EAE42800133758 /* GoogleService-Info.plist */; };
 		7769CD888001CCADDC1ADED8 /* libPods-JPCounterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 237D59999B00BA4A0D77C36E /* libPods-JPCounterUITests.a */; };
@@ -62,6 +64,8 @@
 		1130D78B20DEC8E100741702 /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
 		1130D78D20E09FBE00741702 /* CountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountService.swift; sourceTree = "<group>"; };
 		11357B8E20EA86E8000DEBC6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		1178FD3220EFDA6A004C1C80 /* KitchenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenSpec.swift; sourceTree = "<group>"; };
+		1178FD3420F0244C004C1C80 /* FakeKitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeKitchen.swift; sourceTree = "<group>"; };
 		11A29C4F20EEEA2400AEFCA5 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		237D59999B00BA4A0D77C36E /* libPods-JPCounterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPCounterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFCC8EE212D08E6D53E44E1 /* libPods-JPCounterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JPCounterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,9 +148,11 @@
 		1130D77120DDB57600741702 /* JPCounterTests */ = {
 			isa = PBXGroup;
 			children = (
+				1178FD3420F0244C004C1C80 /* FakeKitchen.swift */,
 				1130D77220DDB57600741702 /* JPCounterTests.swift */,
 				1130D77420DDB57600741702 /* Info.plist */,
 				11A29C4F20EEEA2400AEFCA5 /* ViewControllerSpec.swift */,
+				1178FD3220EFDA6A004C1C80 /* KitchenSpec.swift */,
 			);
 			path = JPCounterTests;
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1130D77320DDB57600741702 /* JPCounterTests.swift in Sources */,
+				1178FD3520F0244C004C1C80 /* FakeKitchen.swift in Sources */,
+				1178FD3320EFDA6A004C1C80 /* KitchenSpec.swift in Sources */,
 				11A29C5020EEEA2400AEFCA5 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,6 +4,8 @@ target 'JPCounterTests' do
   pod 'Nimble'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Spry'
+  pod 'Spry+Nimble'
 end
 
 target 'JPCounterUITests' do
@@ -11,6 +13,8 @@ target 'JPCounterUITests' do
   pod 'Nimble'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Spry'
+  pod 'Spry+Nimble'
 end
 
 
@@ -19,4 +23,6 @@ target 'JPCounter' do
   pod 'Nimble'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Spry'
+  pod 'Spry+Nimble'
 end
